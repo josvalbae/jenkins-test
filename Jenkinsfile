@@ -23,6 +23,12 @@ pipeline {
                 message 'Deploy to dev?'
             }
         }
+        
+        stage('Echo hook') {
+            steps {
+                echo 'Webhook configured properly'
+            }
+        }
 
 
     }
