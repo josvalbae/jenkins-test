@@ -29,8 +29,8 @@ pipeline {
             steps {
                 echo 'Webhook configured properly'
             }
-        }
 
+        }
 
     }
 
