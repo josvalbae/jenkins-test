@@ -19,9 +19,6 @@ pipeline {
                 echo 'user prompt'
             }
 
-            input {
-                message 'Deploy to dev?'
-            }
         }
 
 
