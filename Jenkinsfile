@@ -23,9 +23,6 @@ pipeline {
                 echo 'user prompt'
             }
 
-            input {
-                message 'Deploy to dev?'
-            }
         }
         
         stage('Echo hook 11') {
