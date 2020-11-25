@@ -24,8 +24,7 @@ pipeline {
             }
 
         }
-        
-        
+                
         stage('Echo hook 11') {
             steps {
                 echo 'Webhook configured properly'
