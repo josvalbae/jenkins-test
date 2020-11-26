@@ -3,7 +3,12 @@ pipeline {
     
     triggers {
         githubPush()
-        issueCommentTrigger('rebuild this')
+       // issueCommentTrigger('rebuild this')
+    }
+    
+    options {
+        // add timestamps to output
+        timestamps()
     }
 
     stages {
