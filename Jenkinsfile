@@ -3,6 +3,7 @@ pipeline {
     
     triggers {
         githubPush()
+        issueCommentTrigger('rebuild this')
     }
 
     stages {
