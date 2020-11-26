@@ -7,8 +7,9 @@ pipeline {
     }
     
     options {
-        // add timestamps to output
-        timestamps()
+        timestamps()  // add timestamps to output
+        timeout(time: 1, unit: 'HOURS') // timeout period for the Pipeline run, after which Jenkins should abort the Pipeline
+        buildDiscarder(logRotator(numToKeepStr: '20'))
     }
 
     stages {
